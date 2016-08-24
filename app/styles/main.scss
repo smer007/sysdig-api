@@ -1,0 +1,106 @@
+$icon-font-path: '../fonts/';
+
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+$padding-card: 5px;
+$padding-headFoot: 15px;
+$container-purple: #232390;
+
+/* Space out content a bit */
+body {
+  padding-top: $padding-headFoot;
+  padding-bottom: $padding-headFoot;
+  padding-left:$padding-card;
+  padding-right:$padding-card;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-left: $padding-headFoot;
+  padding-right: $padding-headFoot;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+
+  /* Make the masthead heading the same height as the navigation */
+  h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.event-container{
+  &-btn{
+    margin-bottom:20px;
+    font-weight: 200;
+    color: $container-purple;
+    button.btn{
+      background-color: #ffffff;
+    }
+  }
+  &-card{
+  margin-bottom:20px;
+  background-color:#e6e6ff;
+  border-radius:10px;
+  padding-bottom:$padding-card*2;
+  padding-top:$padding-card;
+    &-heading{
+      font-size:16px;
+      font-weight:800;
+    }
+    &-name{
+      font-size:16px;
+      font-weight:400;
+      background-color: $container-purple;
+      color: white;
+      border-radius: 4px;
+      padding: $padding-card;
+      margin:5px auto;
+      display:inline-block;
+    }
+    &-desc{
+      font-size:14px;
+      font-weight:200; 
+    }
+    &-created{
+
+    }
+    &-severity{
+
+    }
+    &-source{
+
+    }
+  }
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: $container-purple;
+  border-top: 1px solid #e5e5e5;
+  button.btn{
+      background-color: #ffffff;
+    }
+}
+
+
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 990px;
+  }
+
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+}

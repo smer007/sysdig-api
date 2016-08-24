@@ -1,0 +1,20 @@
+<div class="text-center event-container-btn">
+	<button class="btn" ng-click="callEvents()">
+		<span class="glyphicon glyphicon-refresh" aria-hidden="true"></span>
+	</button>Refresh Now
+</div>
+<div class="event-container-card col-xs-12" ng-repeat="event in events">
+<span class="event-container-card-name">{{event.name}}</span>
+<div>
+<span class="event-container-card-heading">Description: </span>
+<span class="event-container-card-desc">{{event.description}}</span></div>
+<div>
+<span class="event-container-card-heading">Created On: </span>
+<span class="event-container-card-created">{{event.createdOn}}</span></div>
+<div>
+<span class="event-container-card-heading">Severity: </span>
+<span class="event-container-card-severity">{{event.severity}}</span></div>
+<div>
+<span class="event-container-card-heading">Source: </span>
+<span class="event-container-card-source">{{event.tags.source}}</span></div>
+</div>
